@@ -14,7 +14,7 @@ public class BinarySearch {
 
         ArrayList<Integer> numbers = new ArrayList<>();
 
-        for (int i = 0; i < 128; i++) {
+        for (int i = 0; i < 12; i++) {
             numbers.add(new Random().nextInt(100));
         }
 
