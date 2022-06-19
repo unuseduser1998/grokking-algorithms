@@ -1,44 +1,41 @@
 package io.ezekielmitchell.Chapter2.ArraysLinkedLists;
 
-import java.util.*;
+import java.util.Arrays;
+
+/**
+ * Complexity: O(n^2)
+ */
 
 public class SelectionSort {
+    // sort the array
+    public static void selectionSort(int[] array) {
+        int arrayLength = array.length;
 
-    // selection sort creates a new array of ordered values
-    public static void main(String[] args) {
+        for (int i = 0; i < arrayLength - 1; i++) {
+            int lowestInteger = i;
 
-        int[] list = new int[10];
+            for (int j = i + 1; j < arrayLength; j++) {
+                if (array[j] < array[lowestInteger]) {
+                    lowestInteger = j;
+                }
+            }
 
-        Random random = new Random();
+            int temp = array[lowestInteger];
+            array[lowestInteger] = array[i];
+            array[i] = temp;
 
-        for (int i = 0; i < list.length; i++) {
-            list[i] = random.nextInt(0, 15);
         }
+        System.out.println(Arrays.toString(array));
+    }
+    public static void main(String[] args) {
+        int[] list = {2,1,6,4,7};
 
+        System.out.println("Unsorted array:");
         System.out.println(Arrays.toString(list));
 
-        System.out.println(Arrays.toString(selectionSort(list)));
+        System.out.println("\nSorted array:");
+        selectionSort(list);
 
     }
 
-    public static int findMinimum(int[] list) {
-        int min = list[0];
-        int minIndex = 0;
-        for (int i = 0; i < list.length; i++) {
-            if (list[i] < min) {
-                min = list[i];
-                minIndex = i;
-            }
-        }
-        return minIndex;
-    }
-
-    public static int[] selectionSort(int[] list) {
-        int[] newList = new int[list.length];
-        for (int i = 0; i < list.length; i++) {
-            int smallest = list[findMinimum(list)];
-            newList[i] = smallest;
-        }
-        return newList;
-    }
 }
