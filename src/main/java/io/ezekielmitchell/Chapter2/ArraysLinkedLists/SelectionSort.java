@@ -13,7 +13,6 @@ public class SelectionSort {
 
         for (int i = 0; i < arrayLength - 1; i++) {
             int lowestInteger = i;
-
             for (int j = i + 1; j < arrayLength; j++) {
                 if (array[j] < array[lowestInteger]) {
                     lowestInteger = j;

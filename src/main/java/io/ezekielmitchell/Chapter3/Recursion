@@ -1,0 +1,20 @@
+# Pseudocode
+A high-level description of the problem I am trying to solve, in code.
+
+# Recursion
+The act of a function calling itself until the task is completed or the search for item is found
+
+When running a recursive function, I must tell the function when to stop calling itself
+
+There are two parts to a recursive function:
+1. Recursive case: when the function calls itself
+2. Base case: when the function stops calling itself
+
+# Call Stack
+Computers internally use the call stack
+
+When I call a function from another, the calling function is paused in a partially completed state --
+all of the values of variables for that function are still stored in memory
+
+WARNING: using stacks is convenient but saving too much info will take up a lot of computer memory
+FIX: change to a loop or use tail recursion (advanced recursion)
