@@ -13,3 +13,8 @@ There are two parts to a recursive function:
 # Call Stack
 Computers internally use the call stack
 
+When I call a function from another, the calling function is paused in a partially completed state --
+all of the values of variables for that function are still stored in memory
+
+WARNING: using stacks is convenient but saving too much info will take up a lot of computer memory
+FIX: change to a loop or use tail recursion (advanced recursion)
