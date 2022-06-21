@@ -16,4 +16,11 @@ class QuickSortTest {
     void max() {
         assertEquals(98, qs.max(arr));
     }
+
+    @org.junit.jupiter.api.Test
+    void quicksort() {
+        int[] arrUnsorted = {3, 5, 1, 4, 2};
+        int[] arrSorted = {1, 2, 3, 4, 5};
+        assertArrayEquals(arrSorted, QuickSort.quicksort(arrUnsorted, 0, arrUnsorted.length-1));
+    }
 }
