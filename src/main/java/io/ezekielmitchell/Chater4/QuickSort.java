@@ -1,8 +1,5 @@
 package io.ezekielmitchell.Chater4;
 
-import java.util.Arrays;
-import java.util.Random;
-
 public class QuickSort {
 
     static QuickSort qs =  new QuickSort();
@@ -10,18 +7,6 @@ public class QuickSort {
     int total = 0;
     int max = 0;
 
-    public static void main(String[] args) {
-        int[] arr = new int[10];
-        Random random = new Random(10);
-
-        for (int i = 0; i < arr.length-1; i++) {
-            arr[i] = random.nextInt(0, 100);
-        }
-
-        System.out.println("Unsorted " + Arrays.toString(arr));
-        System.out.println("Quick sorted " + Arrays.toString(quicksort(arr, 0, arr.length-1)));
-
-    }
 
     private int sumX(int[] arr, int i) {
         total += arr[i];
