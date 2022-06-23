@@ -1,4 +1,4 @@
-package io.ezekielmitchell.Chater4;
+package io.ezekielmitchell.Chapter4;
 
 import static org.junit.jupiter.api.Assertions.*;
 
