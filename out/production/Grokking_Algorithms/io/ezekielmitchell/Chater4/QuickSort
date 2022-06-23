@@ -1,5 +1,7 @@
 # Quicksort
-An algorithm
+An algorithm that sorts a list by first choosing a pivot and then rearranging the indexes accordingly
+
+Its speed depends on the pivot chosen
 
 A type of divide and conquer (D&C) algorithm that is a sorting algorithm
 
@@ -8,6 +10,10 @@ Much faster than selection sort
 # Divide and Conquer
 With every recursion call, I must reduce my problem
 
-# Euclid's Algorithms
-< RESEARCH >
+# Complexity
+O(n^2) -- worst case
+O(n*Log_n) -- average case
 
+
+
+4
