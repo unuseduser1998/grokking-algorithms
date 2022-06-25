@@ -1,3 +1,8 @@
+/**
+ * Complexity: O(1) [avg] "Constant time" || O(n) [worst case] "Linear time"
+ * Purposes: modeling relationships, filtering out dups, caching
+ */
+
 package io.ezekielmitchell.Chapter5;
 
 import java.util.Hashtable;
@@ -30,5 +35,18 @@ public class HashTables {
             // different data types have different hashCode formulas
             System.out.println(key.hashCode() + "\t" + key + " \t:\t " + table1.get(key));
         }
+
+        // Hash functions is when a string is inputted and a number is return
+
+        Hashtable<String, Integer> hashFunctions = new Hashtable<>();
+        hashFunctions.put("Ezekiel", 24);
+        hashFunctions.put("Ohlsson", 25);
+        hashFunctions.put("Pease", 23);
+
+        for (String key : hashFunctions.keySet()) {
+            // different data types have different hashCode formulas
+            System.out.println(key.hashCode() + "\t" + key + " \t:\t " + hashFunctions.get(key));
+        }
+
     }
 }
